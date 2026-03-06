@@ -1,24 +1,24 @@
 # Order API
-```
+
 API simples desenvolvida em Node.js com JavaScript e PostgreSQL para gerenciamento de pedidos.
 
 ## Funcionalidades
-
+```
 - Criar um novo pedido
 - Buscar pedido por ID
 - Listar todos os pedidos
 - Atualizar um pedido existente
 - Deletar um pedido
-
+```
 ## Tecnologias utilizadas
-
+```
 - Node.js
 - Express
 - PostgreSQL
 - dotenv
 - pg
 - nodemon
-
+```
 ## Estrutura do projeto
 ```
 order-api/
@@ -35,8 +35,8 @@ order-api/
 ├─ package.json
 ├─ server.js
 ```
-Como executar o projeto
-
+## Como executar o projeto
+```
 1. Clonar o repositório
 git clone <url-do-repositorio>
 cd order-api
@@ -63,11 +63,11 @@ DB_USER=postgres
 DB_PASSWORD=sua_senha
 DB_NAME=orderdb
 
-6. Rodar a aplicação
+7. Rodar a aplicação
 npm run dev
-
-A API estará disponível em:
-
+```
+## A API estará disponível em:
+```
 http://localhost:3000
 Endpoints
 Criar pedido
@@ -140,6 +140,6 @@ Respostas HTTP utilizadas:
 404 Not Found para pedido não encontrado
 409 Conflict para pedido já existente
 500 Internal Server Error para erros inesperados
-
-Autor
+```
+Autora, <p>
 Giovana Tochtrop.
