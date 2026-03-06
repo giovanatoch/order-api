@@ -21,7 +21,6 @@ API simples desenvolvida em Node.js com JavaScript e PostgreSQL para gerenciamen
 
 ## Estrutura do projeto
 
-```text
 order-api/
 ├─ controllers/
 │  └─ orderController.js
@@ -40,22 +39,21 @@ Como executar o projeto
 
 1. Clonar o repositório
 git clone <url-do-repositorio>
-
 cd order-api
-2. Instalar as dependências
+
+3. Instalar as dependências
 npm install
 
-3. Criar o banco de dados
+4. Criar o banco de dados
 Crie um banco PostgreSQL com o nome:
 orderdb
 
-4. Executar o script SQL
+5. Executar o script SQL
 Execute o arquivo sql/schema.sql no banco para criar as tabelas:
 Order
 Items
 
-5. Criar o arquivo .env
-
+6. Criar o arquivo .env
 Crie um arquivo .env na raiz do projeto com o conteúdo:
 
 PORT=3000
@@ -64,6 +62,7 @@ DB_PORT=5432
 DB_USER=postgres
 DB_PASSWORD=sua_senha
 DB_NAME=orderdb
+
 6. Rodar a aplicação
 npm run dev
 
@@ -72,11 +71,9 @@ A API estará disponível em:
 http://localhost:3000
 Endpoints
 Criar pedido
-
 POST /order
 
 Exemplo de body:
-
 {
   "numeroPedido": "v10089015vdb-01",
   "valorTotal": 10000,
@@ -91,11 +88,9 @@ Exemplo de body:
 }
 
 Buscar pedido por ID
-
 GET /order/:orderId
 
 Exemplo:
-
 /order/v10089015vdb
 
 Listar pedidos
@@ -108,7 +103,6 @@ Deletar pedido
 DELETE /order/:orderId
 
 Mapeamento dos dados
-
 A API recebe os dados no formato:
 
 {
@@ -125,7 +119,6 @@ A API recebe os dados no formato:
 }
 
 E transforma para o formato salvo no banco:
-
 {
   "orderId": "v10089015vdb",
   "value": 10000,
@@ -140,7 +133,6 @@ E transforma para o formato salvo no banco:
 }
 
 Respostas HTTP utilizadas:
-
 201 Created para criação com sucesso
 200 OK para leitura, atualização e remoção
 400 Bad Request para payload inválido
