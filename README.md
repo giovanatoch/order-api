@@ -1,5 +1,5 @@
 # Order API
-
+```
 API simples desenvolvida em Node.js com JavaScript e PostgreSQL para gerenciamento de pedidos.
 
 ## Funcionalidades
@@ -34,7 +34,7 @@ order-api/
 ├─ db.js
 ├─ package.json
 ├─ server.js
-
+```
 Como executar o projeto
 
 1. Clonar o repositório
@@ -119,6 +119,7 @@ A API recebe os dados no formato:
 }
 
 E transforma para o formato salvo no banco:
+
 {
   "orderId": "v10089015vdb",
   "value": 10000,
