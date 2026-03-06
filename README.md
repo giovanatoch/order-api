@@ -20,7 +20,7 @@ API simples desenvolvida em Node.js com JavaScript e PostgreSQL para gerenciamen
 - nodemon
 
 ## Estrutura do projeto
-
+```
 order-api/
 ├─ controllers/
 │  └─ orderController.js
