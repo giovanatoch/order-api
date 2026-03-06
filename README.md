@@ -138,7 +138,8 @@ E transforma para o formato salvo no banco:
     }
   ]
 }
-Respostas HTTP utilizadas
+
+Respostas HTTP utilizadas:
 
 201 Created para criação com sucesso
 200 OK para leitura, atualização e remoção
