@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS "Order" (
+  "orderId" VARCHAR(100) PRIMARY KEY,
+  "value" NUMERIC(12, 2) NOT NULL,
+  "creationDate" TIMESTAMP WITH TIME ZONE NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS "Items" (
+  "id" SERIAL PRIMARY KEY,
+  "orderId" VARCHAR(100) NOT NULL,
+  "productId" INTEGER NOT NULL,
+  "quantity" INTEGER NOT NULL,
+  "price" NUMERIC(12, 2) NOT NULL,
+  CONSTRAINT fk_order
+    FOREIGN KEY ("orderId")
+    REFERENCES "Order"("orderId")
+    ON DELETE CASCADE
+);
